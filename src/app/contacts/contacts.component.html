@@ -1,0 +1,4 @@
+<div>
+  <add-contact (newContactEvent)="contactEvent($event)"></add-contact>
+  <one-contact *ngFor="let contact of contacts">{{ contact.name }}</one-contact>
+</div>
