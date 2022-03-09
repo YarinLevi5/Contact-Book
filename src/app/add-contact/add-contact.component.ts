@@ -9,9 +9,11 @@ export class AddContactComponent implements OnInit {
   @Input() name: string = '';
   @Input() age: number = 0;
   @Output() newContactEvent = new EventEmitter<object>();
+
   btnAddContact(name: string, age: string) {
-    this.newContactEvent.emit({ name: name, age: age });
+    this.newContactEvent.emit({ name, age });
   }
+
   constructor() {}
 
   ngOnInit(): void {}

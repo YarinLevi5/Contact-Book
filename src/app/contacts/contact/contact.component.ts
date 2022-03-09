@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'one-contact',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
+  @Input() name: string = '';
+  @Input() age: number = 0;
+
   constructor() {}
 
   ngOnInit(): void {}

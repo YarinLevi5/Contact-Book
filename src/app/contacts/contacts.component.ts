@@ -9,14 +9,13 @@ import { Contact } from './contact/contact';
 })
 export class ContactsComponent implements OnInit {
   contacts: Contact[] = [];
+
   constructor(private service: ContactService) {
     this.contacts = service.getContacts();
-    this.contactEvent = service.addContact();
   }
 
-  contactEvent(event: object) {
-    this.contacts.push(event);
-    console.log(this.contacts);
+  addcontactEvent(event: Contact) {
+    this.service.addContact(event);
   }
 
   ngOnInit(): void {}

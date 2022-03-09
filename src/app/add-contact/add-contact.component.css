@@ -1,0 +1,16 @@
+.add-contact {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 200px;
+}
+input {
+  margin: 5px;
+  font-size: 18px;
+}
+button {
+  margin: 5px;
+  padding: 5px;
+  width: 60px;
+  margin-left: 70px;
+}

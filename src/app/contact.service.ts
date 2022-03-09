@@ -7,8 +7,9 @@ export class ContactService {
   constructor() {}
 
   private contacts: Contact[] = [];
-  addContact(contact: Contact) {
-    return this.contacts.push(contact);
+
+  addContact(contact: Contact): void {
+    this.contacts.push(contact);
   }
   getContacts(): Contact[] {
     return this.contacts;
